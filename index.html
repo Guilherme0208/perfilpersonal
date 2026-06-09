@@ -33,11 +33,16 @@
       rel="stylesheet"
     />
     <link rel="icon" href="Favicon/icons8-muscle-flexing-32.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <header class="hero">
       <nav class="navbar">
-        <strong>William Miranda | Personal Trainer</strong>
+        <strong>William N. Personal</strong>
         <a href="#contato">Contato</a>
       </nav>
 
@@ -113,12 +118,48 @@
     </section>
 
     <section class="results">
-      <span class="section-tag">Resultados</span>
-      <h2>Resultados começam com constância</h2>
+      <span class="section-tag">Treinos</span>
+      <h2>Treinos e acompanhamento</h2>
       <p>
-        O acompanhamento correto ajuda você a treinar melhor, evitar lesões e
-        manter disciplina até alcançar seus objetivos.
+        Confira alguns momentos de treinos e orientações realizadas durante os
+        acompanhamentos.
       </p>
+
+      <div class="carousel">
+        <div class="carousel-track">
+          <video autoplay muted loop playsinline>
+            <source src="Videos/VID-20250623-WA0009.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo.
+          </video>
+
+          <video autoplay muted loop playsinline>
+            <source src="Videos/VID-20250623-WA0010.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo.
+          </video>
+
+          <video autoplay muted loop playsinline>
+            <source src="Videos/VID-20250623-WA0011.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeo.
+          </video>
+
+          <video autoplay muted loop playsinline>
+            <source src="Videos/VID-20250623-WA0012.mp4" />
+            Seu navegador não suporta vídeo.
+          </video>
+
+          <video autoplay muted loop playsinline>
+            <source src="Videos/VID-20250623-WA0013.mp4" />
+            Seu navegador não suporta vídeo.
+          </video>
+
+          <video autoplay muted loop playsinline>
+            <source
+              src="Videos/Vídeo do WhatsApp de 2025-06-28 à(s) 21.47.11_3982a578.mp4"
+            />
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+      </div>
     </section>
 
     <section class="testimonials">
@@ -128,12 +169,12 @@
       <div class="cards">
         <div class="card">
           <p>“Excelente profissional, muito atencioso e dedicado.”</p>
-          <strong>Aluno</strong>
+          <strong>Bruna</strong>
         </div>
 
         <div class="card">
           <p>“Os treinos me ajudaram a ter mais disposição e disciplina.”</p>
-          <strong>Aluno</strong>
+          <strong>Arthur</strong>
         </div>
       </div>
     </section>
@@ -142,12 +183,41 @@
       <h2>Pronto para começar sua transformação?</h2>
       <p>Agende uma avaliação e dê o primeiro passo.</p>
       <br />
-      <a href="#" class="btn-primary">Falar no WhatsApp</a>
+      <a
+        href="https://wa.me/5562992018196?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação."
+        class="btn-primary"
+        >Falar no WhatsApp</a
+      >
     </section>
 
+    <div class="footer-divider">
+      <i class="fa-solid fa-dumbbell"></i>
+    </div>
+
     <footer>
-      <p>© 2026 William Nascimento Miranda</p>
-      <p>Desenvolvido por Guilherme Henrique</p>
+      <p>
+        © <span id="ano"></span>
+        William Nascimento Miranda
+      </p>
+
+      <p>Personal Trainer</p>
+
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/willnascimento.personal"
+          target="_blank"
+          class="instagram-btn"
+        >
+          <i class="fa-brands fa-instagram"></i>
+
+          <span>Instagram</span>
+        </a>
+      </div>
+
+      <p class="developer">
+        Desenvolvido por
+        <a href="https://github.com/Guilherme0208" target="_blank"> GH Tech </a>
+      </p>
     </footer>
 
     <script>
@@ -174,6 +244,15 @@
       })
     </script>
 
-    <a href="#" class="whatsapp-float">💬</a>
+    <a
+      href="https://wa.me/5562992018196?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação."
+      class="whatsapp-float"
+      target="_blank"
+      >💬</a
+    >
+
+    <script>
+      document.getElementById("ano").textContent = new Date().getFullYear()
+    </script>
   </body>
 </html>
