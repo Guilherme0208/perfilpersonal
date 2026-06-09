@@ -1,21 +1,28 @@
-# Perfil Personal Trainer
+# William Nascimento Miranda - Personal Trainer
 
-Landing page profissional para apresentação de serviços de personal trainer.
+Landing Page profissional desenvolvida para apresentação de serviços de Personal Trainer.
 
 ## Tecnologias
 
-- HTML5
-- CSS3
-- Responsividade
-- Deploy na Vercel
+* HTML5
+* CSS3
+* JavaScript
+* Responsividade
+* SEO Básico
 
 ## Funcionalidades
 
-- Apresentação profissional
-- Links para WhatsApp e Instagram
-- Galeria de vídeos
-- Layout responsivo
+* Hero Section
+* Sobre o Profissional
+* Serviços
+* Depoimentos
+* Chamada para ação
+* Botão WhatsApp
+* Responsividade Mobile
+* SEO e Open Graph
 
 ## Desenvolvedor
 
 Guilherme Henrique
+
+GitHub: https://github.com/Guilherme0208
