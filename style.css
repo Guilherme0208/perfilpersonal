@@ -504,7 +504,8 @@ footer p + p {
 }
 
 .view-all-btn {
-   margin-top: 2rem;
+   display: block;
+   margin: 2rem auto;
 }
 
 .reviews-modal {
