@@ -47,7 +47,7 @@ body {
    text-align: center;
    background:
       linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)),
-      url("assets/WN_Personal.png");
+      url("assets/image.png");
    background-size: cover;
    background-position: center;
 }
@@ -580,4 +580,42 @@ footer p + p {
 
 .featured-review strong {
    color: #38bdf8;
+}
+
+.contact-form {
+   max-width: 700px;
+
+   margin: 2rem auto 0;
+
+   display: grid;
+
+   gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+   width: 100%;
+
+   padding: 1rem;
+
+   border-radius: 12px;
+
+   border: 1px solid rgba(255, 255, 255, 0.15);
+
+   background: rgba(255, 255, 255, 0.06);
+
+   color: white;
+
+   font-size: 1rem;
+}
+
+.contact-form textarea {
+   min-height: 150px;
+
+   resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+   color: #94a3b8;
 }

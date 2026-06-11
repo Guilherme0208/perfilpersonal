@@ -248,13 +248,31 @@
 
       <section class="cta" id="contato">
          <h2>Pronto para começar sua transformação?</h2>
-         <p>Agende uma avaliação e dê o primeiro passo.</p>
-         <br />
-         <a
-            href="https://wa.me/5562992018196?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação."
-            class="btn-primary"
-            >Falar no WhatsApp</a
-         >
+
+         <p>Preencha seus dados e fale diretamente comigo.</p>
+
+         <form id="whatsappForm" class="contact-form">
+            <input type="text" id="nome" placeholder="Seu nome" required />
+
+            <input type="number" id="idade" placeholder="Sua idade" required />
+
+            <input
+               type="text"
+               id="objetivo"
+               placeholder="Objetivo (Emagrecimento, Hipertrofia, etc.)"
+               required
+            />
+
+            <textarea
+               id="mensagem"
+               placeholder="Conte um pouco sobre você, suas dúvidas e objetivos..."
+               required
+            ></textarea>
+
+            <button type="submit" class="btn-primary">
+               Enviar para WhatsApp
+            </button>
+         </form>
       </section>
 
       <div class="footer-divider">
@@ -546,6 +564,40 @@
          });
 
          loadTestimonials();
+      </script>
+
+      <script>
+         document
+            .getElementById("whatsappForm")
+            .addEventListener("submit", function (e) {
+               e.preventDefault();
+
+               const nome = document.getElementById("nome").value;
+
+               const idade = document.getElementById("idade").value;
+
+               const objetivo = document.getElementById("objetivo").value;
+
+               const mensagem = document.getElementById("mensagem").value;
+
+               const texto = `Olá William!
+
+Meu nome é ${nome}.
+
+Idade: ${idade}
+
+Objetivo:
+${objetivo}
+
+Mais informações:
+${mensagem}
+
+Gostaria de saber mais sobre sua consultoria.`;
+
+               const whatsappURL = `https://wa.me/5562992018196?text=${encodeURIComponent(texto)}`;
+
+               window.open(whatsappURL, "_blank");
+            });
       </script>
    </body>
 </html>
